@@ -29,5 +29,5 @@ For convenience, a script file is provided that handles downloading the necessar
 
 ## Troubleshooting
 
-Consider opening an Issue if you have [troubles](https://github.com/AERO-TRAIN/summer_school_perception_day/issues) with the exercises of the repo.\
-Feel free to use the [Discussions](https://github.com/AERO-TRAIN/summer_school_perception_day/discussions) tab to exchange ideas and ask questions.
+Consider opening an Issue if you have [troubles](https://github.com/AERO-TRAIN/exercises_summer_school_perception_day/issues) with the exercises of the repo.\
+Feel free to use the [Discussions](https://github.com/AERO-TRAIN/exercises_summer_school_perception_day/discussions) tab to exchange ideas and ask questions.
