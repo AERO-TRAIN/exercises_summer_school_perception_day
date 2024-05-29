@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>2d_to_3d</name>
+  <version>0.0.0</version>
+  <description>Aero-Train Summer School Package that contains the code for 3D pose estimation from a user click</description>
+  <license>MIT</license>
+  <maintainer email="riccardo.franceschini@eurecat.org">Riccardo Franceschini</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>roslib</depend>
+  <depend>std_msgs</depend>
+  <depend>tf</depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
