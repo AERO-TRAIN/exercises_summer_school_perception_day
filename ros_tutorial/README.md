@@ -50,7 +50,7 @@ This exercise involves developing a target detection algorithm to identify circu
 
 This exercise involves developing a complete pipeline for 2D to 3D point extraction. The yellow nodes will be implemented, consisting of a node that displays the camera image and allows the user to select coordinates using the mouse interface. The 2D coordinates are then sent as a message to the Extract3DFrom2D node, which uses the raw depth image and depth camera information to retrieve the position and orientation of the object in space.
 <div align="center">
-  <img src="./solution/2d_to_3d/docs/2d_to_3d_diagram.png"/>
+  <img src="./exercises/2d_to_3d/docs/2d_to_3d_diagram.png"/>
 </div>
 
 ### Exercise 4: deal with roslaunch 
