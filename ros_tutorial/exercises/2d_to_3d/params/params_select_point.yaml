@@ -1,0 +1,2 @@
+image_topic: "/camera/color/image"
+point_topic: "/clicked_point"
