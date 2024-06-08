@@ -19,8 +19,7 @@ services:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
             - /etc/sudoers.d:/etc/sudoers.d:ro
             - /dev:/dev
-            #- /exercises:/root/catkin_ws/src/exercises
-            - ../solution/:/root/catkin_ws/src/
+            - /exercises:/root/catkin_ws/src/exercises
             - ../bag:/root/bag
         environment:
             - DISPLAY=$DISPLAY
