@@ -1,0 +1,9 @@
+point_topic: "/clicked_point"
+depth_topic: "/camera/depth/image"
+depth_info_topic: "/camera/depth/camera_info"
+point_pub_topic: "/retrieved_point"
+extracted_cloud_topic: "/point_cloud"
+crop_w: 60
+crop_h: 60
+translation: 0.0
+opposite_direction: False

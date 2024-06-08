@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="2d_to_3d" type="extract_3d_from_2d.py" name="extract_3d_from_2d" output="screen">
+        <rosparam file="$(find 2d_to_3d)/params/params_2d_to_3d.yaml" command="load" />
+    </node>
+    <node pkg="2d_to_3d" type="select_point_2d.py" name="select_point_2d" output="screen">
+        <rosparam file="$(find 2d_to_3d)/params/params_select_point.yaml" command="load" />
+    </node>
+</launch>

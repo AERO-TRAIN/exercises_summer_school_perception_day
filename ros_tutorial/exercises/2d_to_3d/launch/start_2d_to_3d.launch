@@ -1,0 +1,19 @@
+<launch>
+    <node pkg="2d_to_3d" type="extract_3d_from_2d.py" name="extract_3d_from_2d" output="screen">
+        <!-- Add any necessary parameters here -->
+        <param name="depth_topic" value="/camera/depth/image"/>
+        <param name="depth_info_topic" value="/camera/depth/camera_info"/>
+        <param name="point_pub_topic" value="/retrieved_point"/>
+        <param name="extracted_cloud_topic" value="/point_cloud"/>
+        <param name="crop_w" value="60"/>
+        <param name="crop_h" value="60"/>
+        <param name="translation" value="0"/>
+        <param name="opposite_direction" value="False"/>
+    </node>
+
+    <node pkg="2d_to_3d" type="select_point_2d.py" name="select_point_2d" output="screen">
+        <!-- Add any necessary parameters here -->
+        <param name="image_topic" value="/camera/color/image"/>
+        <param name="point_topic" value="/clicked_point"/>
+    </node>
+</launch>
