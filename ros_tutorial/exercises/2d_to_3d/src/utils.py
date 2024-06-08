@@ -31,7 +31,7 @@ def from_two_vectors(vec1, vec2):
 
     s = np.sqrt((1 + dot_prod) * 2)
     invs = 1 / s
-    
+
     return R.from_quat([cross_prod[0] * invs, cross_prod[1] * invs, cross_prod[2] * invs, s * 0.5])
 
 def  open3d_to_pc2( open3d_cloud, frame_id=None, stamp=None):
@@ -78,6 +78,8 @@ def get_pose_stamped(point, normal, frame_id, stamp, translated=0, opposite_dire
     if opposite_direction:
         vector_orientation = np.array([-1, 0, 0])
 
+    #print("vector_orientation: ", vector_orientation)
+    #print("normal: ", normal)
 
     next_orientation = from_two_vectors(vector_orientation, normal)
     
