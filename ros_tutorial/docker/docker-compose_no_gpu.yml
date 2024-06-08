@@ -20,7 +20,6 @@ services:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
             - /dev:/dev
             - ../exercises/:/root/catkin_ws/src/
-            #- ../solution/:/root/catkin_ws/src/
             - ../bag:/root/bag
         environment:
             - DISPLAY=$DISPLAY
