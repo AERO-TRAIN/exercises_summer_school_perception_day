@@ -197,7 +197,6 @@ if __name__ == "__main__":
     crop_h_ = rospy.get_param("~crop_h", 60)
     translation_ = rospy.get_param("~translation", 0.0)
     opposite_direction_ = rospy.get_param("~opposite_direction", False)  
-    opposite_direction_ = False
 
     print("opposite_direction: ", opposite_direction_)
     print("translation: ", translation_)
