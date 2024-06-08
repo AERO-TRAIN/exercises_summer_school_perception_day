@@ -1,0 +1,9 @@
+<launch>
+    <!-- publisher_listener node -->
+    <node name="publisher_listener" pkg="publisher_listener" type="publisher_listener.py" output="screen">
+    </node>
+
+    <!-- publish data_in -->
+    <node pkg="rostopic" type="rostopic" name="data_in" args="pub /data_in std_msgs/Int16 1 -r 10" output="screen"/>
+
+</launch>

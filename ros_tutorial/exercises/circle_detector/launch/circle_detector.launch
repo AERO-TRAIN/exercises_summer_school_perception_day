@@ -1,0 +1,16 @@
+<launch>
+    <!-- circle detector node -->
+    <node name="circle_detector" pkg="circle_detector" type="circle_detector.py" output="screen">
+        <param name="color_topic" value="/camera/color/image"/>
+        <param name="dp" value ="1.5"/>
+        <param name="min_dist" value="0.000001"/>
+        <param name="min_radius" value="5"/>
+        <param name="max_radius" value="100"/>
+    </node>
+
+    <!-- show image with detected circles -->
+    <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view" respawn="false" output="screen">
+        <remap from="image" to="/camera/detected_circles" />
+    </node>
+
+</launch>
