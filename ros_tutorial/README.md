@@ -42,9 +42,26 @@ If everything is launched properly, you should be able to run *aerotrain.bag* in
 
 This exercise involves the development of a simple publisher/subscriber ROS node. The node will listen to an integer message `/data_in` and publish the sum of the values sent to the node `/data_out`.
 
+```bash
+roslaunch publisher_listener publisher_listener.launch
+```
+
 ### Exercise 2: detection node
 
 This exercise involves developing a target detection algorithm to identify circular target using `HoughCircles` method. The node will listen to the *Camera Image* topic and attempt to detect the target at each time. The node will publish both the center position of the detected circle and an, to prove the detection has been successful, an image showing the detected circle with its center marked.
+
+```bash
+roslaunch roslaunch circle_detector circle_detector.launch 
+```
+
+### Exercise 2 plus: detection node from laptop camera
+
+Same as exercise 2, but use camera from your pc.
+The target is available at [here](exercises/circle_detector/media/target.pdf), you can print the target or show it to the camera from the mobile phone.
+
+```bash
+roslaunch circle_detector circle_detector_laptop_camera.launch
+```
 
 ### Exercise 3: from 2D to 3D
 
@@ -53,8 +70,14 @@ This exercise involves developing a complete pipeline for 2D to 3D point extract
   <img src="./exercises/2d_to_3d/docs/2d_to_3d_diagram.png"/>
 </div>
 
+```bash
+roslaunch 2d_to_3d start_2d_to_3d.launch
+```
+
 ### Exercise 4: deal with roslaunch 
 
 The exercise 4 builds upon exercise 3, adapting the code to be executed and parameterized using roslaunch. With roslaunch, we can launch multiple nodes from a single file and set parameters that will be read at runtime, either by defining them directly in the launch file or through a separate YAML configuration file.
 
-
+```bash
+roslaunch 2d_to_3d start_2d_to_3d_params.launch
+```
